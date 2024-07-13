@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  bot:
+    # user: "1000:1000" # Didn't work
+    build: .
+    env_file:
+      - .env
+    restart: always
+#     environment:
+#       - TRANSFORMERS_CACHE=/cache
+#       - HF_HOME=/cache
+#       - XDG_CACHE_HOME=/cache
+#     volumes:
+#       - cache:/cache
+#       - ./data:/app/data
+# volumes:
+#   cache:
